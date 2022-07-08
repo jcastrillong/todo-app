@@ -1,0 +1,75 @@
+.title-form {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.todo-form-label {
+  font-size: 20px;
+  color: #1f1f1f;
+}
+
+.todo-form-title {
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 1rem;
+  padding: 0 12px;
+}
+
+.todo-form-text {
+  font-size: 14px;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 270px;
+  margin-bottom: 1rem;
+  padding: 12px;
+  resize: none;
+}
+
+.todo-form-btn {
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 35px;
+  padding: 0 12px;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.todo-form-btn:hover {
+  background-color: #000;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .title-form {
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+
+  .todo-form-text {
+    height: 150px;
+  }
+}

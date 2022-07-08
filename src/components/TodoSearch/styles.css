@@ -1,0 +1,10 @@
+.todo-search {
+  background: #f9fbfc;
+  border-radius: 5px;
+  padding: 0 12px;
+  height: 35px;
+  border: 2px solid #e6ebf1;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+}

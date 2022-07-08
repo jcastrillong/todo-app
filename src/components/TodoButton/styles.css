@@ -1,0 +1,31 @@
+.todo-btn {
+  display: flex;
+  background-color: #d8c83a;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.todo-btn:hover {
+  background-color: #e2cf26;
+  box-shadow: 0 0 20px rgba(255, 251, 0, 0.999);
+  transform: rotate(360deg);
+}
+
+@media screen and (min-width: 769px) {
+  .todo-btn {
+    display: none;
+  }
+}

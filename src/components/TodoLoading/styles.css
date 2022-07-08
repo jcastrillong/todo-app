@@ -1,0 +1,82 @@
+.loadingTodo-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.loadingTodo-icon-check {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 50%;
+}
+
+.loadingTodo-icon-delete {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  border-radius: 50%;
+}
+
+.loadingTodo-title {
+  width: calc(100% - 60px);
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 10px;
+}
+
+.loadingTodo-text {
+  width: calc(100% - 10px);
+  height: 35px;
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  border-radius: 10px;
+}
+
+.loadingTodo-date {
+  width: 50%;
+  height: 15px;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  border-radius: 10px;
+}
+
+.loadingTodo-container {
+  background: linear-gradient(90deg, rgba(250, 250, 250, 1), rgb(200, 199, 199));
+  background-size: 400% 400%;
+  animation: loading-animation 3s ease-in-out infinite;
+}
+
+.loadingTodo-title,
+.loadingTodo-text,
+.loadingTodo-date,
+.loadingTodo-icon-check,
+.loadingTodo-icon-delete {
+  background: linear-gradient(90deg, rgb(200, 199, 199), rgba(250, 250, 250, 1));
+  background-size: 400% 400%;
+  animation: loading-animation 3s ease-in-out infinite;
+}
+
+@keyframes loading-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
